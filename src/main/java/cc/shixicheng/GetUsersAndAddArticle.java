@@ -61,7 +61,7 @@ public class GetUsersAndAddArticle {
     }
 
     public void getCSDNUsers(String userName) {
-        if (users.size() > 200) {
+        if (users.size() > 1800) {
             return;
         }
         Set<String> userList = parseFans(mePage(userName));
@@ -88,7 +88,7 @@ public class GetUsersAndAddArticle {
             Map<String, String> header = new HashMap<>();
             header.put("cookie", "UserName=" + myUserName + "; UserToken=" + token);
             HttpUtil.doPostForm(followUrl, header, params);
-            System.out.println(username + "follow success");
+            System.out.println(username + " follow success");
         } catch (IOException e) {
             e.printStackTrace();
         }
