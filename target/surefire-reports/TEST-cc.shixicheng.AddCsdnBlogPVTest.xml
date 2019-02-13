@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="3" failures="0" name="cc.shixicheng.AddCsdnBlogPVTest" time="14.173" errors="1" skipped="0">
+  <properties>
+    <property name="idea.version" value="2018.3.3"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/marx_luo/Workspace/spider"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/marx_luo/Workspace/spider"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/my/3j5hbgqd2nv18k7ybld69h480000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/marx_luo/Software/apache-maven-3.5.0/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/marx_luo/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Users/marx_luo/Software/apache-maven-3.5.0/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.13.6"/>
+    <property name="library.jansi.path" value="/Users/marx_luo/Software/apache-maven-3.5.0/lib/jansi-native/osx64"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/marx_luo"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="marx_luo"/>
+    <property name="java.class.path" value="/Users/marx_luo/Software/apache-maven-3.5.0/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2018.3.3 package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="java.ext.dirs" value="/Users/marx_luo/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/marx_luo/Software/apache-maven-3.5.0"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="cc.shixicheng.AddCsdnBlogPVTest" name="testVisit" time="0.101"/>
+  <testcase classname="cc.shixicheng.AddCsdnBlogPVTest" name="visitOnePage" time="12.548"/>
+  <testcase classname="cc.shixicheng.AddCsdnBlogPVTest" name="addBlogUrl" time="1.524">
+    <error message="Server returned HTTP response code: 544 for URL: https://blog.csdn.net/luo4105/article/list/15" type="java.io.IOException">java.io.IOException: Server returned HTTP response code: 544 for URL: https://blog.csdn.net/luo4105/article/list/15
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1876)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1474)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254)
+	at cc.shixicheng.HttpUtil.doGet(HttpUtil.java:42)
+	at cc.shixicheng.HttpUtil.doGet(HttpUtil.java:20)
+	at cc.shixicheng.AddCsdnBlogPV.addBlogUrl(AddCsdnBlogPV.java:96)
+	at cc.shixicheng.AddCsdnBlogPV.addBlogUrl(AddCsdnBlogPV.java:79)
+	at cc.shixicheng.AddCsdnBlogPVTest.addBlogUrl(AddCsdnBlogPVTest.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>ip:100.194.167.164
+成功添加博客地址：/luo4105/article/details/86599896
+成功添加博客地址：/luo4105/article/details/86599896
+成功添加博客地址：/luo4105/article/details/86383751
+成功添加博客地址：/luo4105/article/details/86383751
+成功添加博客地址：/luo4105/article/details/82532129
+成功添加博客地址：/luo4105/article/details/82532129
+成功添加博客地址：/luo4105/article/details/82532110
+成功添加博客地址：/luo4105/article/details/82532110
+成功添加博客地址：/luo4105/article/details/82501608
+成功添加博客地址：/luo4105/article/details/82501608
+成功添加博客地址：/luo4105/article/details/82501597
+成功添加博客地址：/luo4105/article/details/82501597
+成功添加博客地址：/luo4105/article/details/82501581
+成功添加博客地址：/luo4105/article/details/82501581
+成功添加博客地址：/luo4105/article/details/77897335
+成功添加博客地址：/luo4105/article/details/77897335
+成功添加博客地址：/luo4105/article/details/77897260
+成功添加博客地址：/luo4105/article/details/77897260
+成功添加博客地址：/luo4105/article/details/81568762
+成功添加博客地址：/luo4105/article/details/81568762
+成功添加博客地址：/luo4105/article/details/81568587
+成功添加博客地址：/luo4105/article/details/81568587
+成功添加博客地址：/luo4105/article/details/80724615
+成功添加博客地址：/luo4105/article/details/80724615
+成功添加博客地址：/luo4105/article/details/80514731
+成功添加博客地址：/luo4105/article/details/80514731
+成功添加博客地址：/luo4105/article/details/79733338
+成功添加博客地址：/luo4105/article/details/79733338
+成功添加博客地址：/luo4105/article/details/79444353
+成功添加博客地址：/luo4105/article/details/79444353
+成功添加博客地址：/luo4105/article/details/79444350
+成功添加博客地址：/luo4105/article/details/79444350
+成功添加博客地址：/luo4105/article/details/79333647
+成功添加博客地址：/luo4105/article/details/79333647
+成功添加博客地址：/luo4105/article/details/78984328
+成功添加博客地址：/luo4105/article/details/78984328
+成功添加博客地址：/luo4105/article/details/78984223
+成功添加博客地址：/luo4105/article/details/78984223
+成功添加博客地址：/luo4105/article/details/78984207
+成功添加博客地址：/luo4105/article/details/78984207
+ip:196.137.127.129
+成功添加博客地址：/luo4105/article/details/78984195
+成功添加博客地址：/luo4105/article/details/78984195
+成功添加博客地址：/luo4105/article/details/78580786
+成功添加博客地址：/luo4105/article/details/78580786
+成功添加博客地址：/luo4105/article/details/78043727
+成功添加博客地址：/luo4105/article/details/78043727
+成功添加博客地址：/luo4105/article/details/78032809
+成功添加博客地址：/luo4105/article/details/78032809
+成功添加博客地址：/luo4105/article/details/77994239
+成功添加博客地址：/luo4105/article/details/77994239
+成功添加博客地址：/luo4105/article/details/77994207
+成功添加博客地址：/luo4105/article/details/77994207
+成功添加博客地址：/luo4105/article/details/77968761
+成功添加博客地址：/luo4105/article/details/77968761
+成功添加博客地址：/luo4105/article/details/77936283
+成功添加博客地址：/luo4105/article/details/77936283
+成功添加博客地址：/luo4105/article/details/77896831
+成功添加博客地址：/luo4105/article/details/77896831
+成功添加博客地址：/luo4105/article/details/77896780
+成功添加博客地址：/luo4105/article/details/77896780
+成功添加博客地址：/luo4105/article/details/77896300
+成功添加博客地址：/luo4105/article/details/77896300
+成功添加博客地址：/luo4105/article/details/77895260
+成功添加博客地址：/luo4105/article/details/77895260
+成功添加博客地址：/luo4105/article/details/77894415
+成功添加博客地址：/luo4105/article/details/77894415
+成功添加博客地址：/luo4105/article/details/77894340
+成功添加博客地址：/luo4105/article/details/77894340
+成功添加博客地址：/luo4105/article/details/77894214
+成功添加博客地址：/luo4105/article/details/77894214
+成功添加博客地址：/luo4105/article/details/77894163
+成功添加博客地址：/luo4105/article/details/77894163
+成功添加博客地址：/luo4105/article/details/77893963
+成功添加博客地址：/luo4105/article/details/77893963
+成功添加博客地址：/luo4105/article/details/77892889
+成功添加博客地址：/luo4105/article/details/77892889
+成功添加博客地址：/luo4105/article/details/77840191
+成功添加博客地址：/luo4105/article/details/77840191
+成功添加博客地址：/luo4105/article/details/77773027
+成功添加博客地址：/luo4105/article/details/77773027
+ip:130.159.127.190
+成功添加博客地址：/luo4105/article/details/77743161
+成功添加博客地址：/luo4105/article/details/77743161
+成功添加博客地址：/luo4105/article/details/77720679
+成功添加博客地址：/luo4105/article/details/77720679
+成功添加博客地址：/luo4105/article/details/77678507
+成功添加博客地址：/luo4105/article/details/77678507
+成功添加博客地址：/luo4105/article/details/77678273
+成功添加博客地址：/luo4105/article/details/77678273
+成功添加博客地址：/luo4105/article/details/77193828
+成功添加博客地址：/luo4105/article/details/77193828
+成功添加博客地址：/luo4105/article/details/76683444
+成功添加博客地址：/luo4105/article/details/76683444
+成功添加博客地址：/luo4105/article/details/76612376
+成功添加博客地址：/luo4105/article/details/76612376
+成功添加博客地址：/luo4105/article/details/76549525
+成功添加博客地址：/luo4105/article/details/76549525
+成功添加博客地址：/luo4105/article/details/76549439
+成功添加博客地址：/luo4105/article/details/76549439
+成功添加博客地址：/luo4105/article/details/76549282
+成功添加博客地址：/luo4105/article/details/76549282
+成功添加博客地址：/luo4105/article/details/76546343
+成功添加博客地址：/luo4105/article/details/76546343
+成功添加博客地址：/luo4105/article/details/76546198
+成功添加博客地址：/luo4105/article/details/76546198
+成功添加博客地址：/luo4105/article/details/76542977
+成功添加博客地址：/luo4105/article/details/76542977
+成功添加博客地址：/luo4105/article/details/76541250
+成功添加博客地址：/luo4105/article/details/76541250
+成功添加博客地址：/luo4105/article/details/75561101
+成功添加博客地址：/luo4105/article/details/75561101
+成功添加博客地址：/luo4105/article/details/74762634
+成功添加博客地址：/luo4105/article/details/74762634
+成功添加博客地址：/luo4105/article/details/74762435
+成功添加博客地址：/luo4105/article/details/74762435
+成功添加博客地址：/luo4105/article/details/74760151
+成功添加博客地址：/luo4105/article/details/74760151
+成功添加博客地址：/luo4105/article/details/74518580
+成功添加博客地址：/luo4105/article/details/74518580
+成功添加博客地址：/luo4105/article/details/74518205
+成功添加博客地址：/luo4105/article/details/74518205
+ip:174.106.142.149
+成功添加博客地址：/luo4105/article/details/73817616
+成功添加博客地址：/luo4105/article/details/73817616
+成功添加博客地址：/luo4105/article/details/73650562
+成功添加博客地址：/luo4105/article/details/73650562
+成功添加博客地址：/luo4105/article/details/73650509
+成功添加博客地址：/luo4105/article/details/73650509
+成功添加博客地址：/luo4105/article/details/73650414
+成功添加博客地址：/luo4105/article/details/73650414
+成功添加博客地址：/luo4105/article/details/73650036
+成功添加博客地址：/luo4105/article/details/73650036
+成功添加博客地址：/luo4105/article/details/73650007
+成功添加博客地址：/luo4105/article/details/73650007
+成功添加博客地址：/luo4105/article/details/72967241
+成功添加博客地址：/luo4105/article/details/72967241
+成功添加博客地址：/luo4105/article/details/72902328
+成功添加博客地址：/luo4105/article/details/72902328
+成功添加博客地址：/luo4105/article/details/72900989
+成功添加博客地址：/luo4105/article/details/72900989
+成功添加博客地址：/luo4105/article/details/72865519
+成功添加博客地址：/luo4105/article/details/72865519
+成功添加博客地址：/luo4105/article/details/72865424
+成功添加博客地址：/luo4105/article/details/72865424
+成功添加博客地址：/luo4105/article/details/72736534
+成功添加博客地址：/luo4105/article/details/72736534
+成功添加博客地址：/luo4105/article/details/72695378
+成功添加博客地址：/luo4105/article/details/72695378
+成功添加博客地址：/luo4105/article/details/72692184
+成功添加博客地址：/luo4105/article/details/72692184
+成功添加博客地址：/luo4105/article/details/72689843
+成功添加博客地址：/luo4105/article/details/72689843
+成功添加博客地址：/luo4105/article/details/72582692
+成功添加博客地址：/luo4105/article/details/72582692
+成功添加博客地址：/luo4105/article/details/72486512
+成功添加博客地址：/luo4105/article/details/72486512
+成功添加博客地址：/luo4105/article/details/72480997
+成功添加博客地址：/luo4105/article/details/72480997
+成功添加博客地址：/luo4105/article/details/72420622
+成功添加博客地址：/luo4105/article/details/72420622
+成功添加博客地址：/luo4105/article/details/72420427
+成功添加博客地址：/luo4105/article/details/72420427
+ip:169.113.143.183
+成功添加博客地址：/luo4105/article/details/72327249
+成功添加博客地址：/luo4105/article/details/72327249
+成功添加博客地址：/luo4105/article/details/72327144
+成功添加博客地址：/luo4105/article/details/72327144
+成功添加博客地址：/luo4105/article/details/72326621
+成功添加博客地址：/luo4105/article/details/72326621
+成功添加博客地址：/luo4105/article/details/72325022
+成功添加博客地址：/luo4105/article/details/72325022
+成功添加博客地址：/luo4105/article/details/72142351
+成功添加博客地址：/luo4105/article/details/72142351
+成功添加博客地址：/luo4105/article/details/70877646
+成功添加博客地址：/luo4105/article/details/70877646
+成功添加博客地址：/luo4105/article/details/70877077
+成功添加博客地址：/luo4105/article/details/70877077
+成功添加博客地址：/luo4105/article/details/70829489
+成功添加博客地址：/luo4105/article/details/70829489
+成功添加博客地址：/luo4105/article/details/70828333
+成功添加博客地址：/luo4105/article/details/70828333
+成功添加博客地址：/luo4105/article/details/70822534
+成功添加博客地址：/luo4105/article/details/70822534
+成功添加博客地址：/luo4105/article/details/70821622
+成功添加博客地址：/luo4105/article/details/70821622
+成功添加博客地址：/luo4105/article/details/70821400
+成功添加博客地址：/luo4105/article/details/70821400
+成功添加博客地址：/luo4105/article/details/70821341
+成功添加博客地址：/luo4105/article/details/70821341
+成功添加博客地址：/luo4105/article/details/70821293
+成功添加博客地址：/luo4105/article/details/70821293
+成功添加博客地址：/luo4105/article/details/70821221
+成功添加博客地址：/luo4105/article/details/70821221
+成功添加博客地址：/luo4105/article/details/70756328
+成功添加博客地址：/luo4105/article/details/70756328
+成功添加博客地址：/luo4105/article/details/70305589
+成功添加博客地址：/luo4105/article/details/70305589
+成功添加博客地址：/luo4105/article/details/70305051
+成功添加博客地址：/luo4105/article/details/70305051
+成功添加博客地址：/luo4105/article/details/70304930
+成功添加博客地址：/luo4105/article/details/70304930
+成功添加博客地址：/luo4105/article/details/70245952
+成功添加博客地址：/luo4105/article/details/70245952
+ip:155.144.139.151
+成功添加博客地址：/luo4105/article/details/70182451
+成功添加博客地址：/luo4105/article/details/70182451
+成功添加博客地址：/luo4105/article/details/69945086
+成功添加博客地址：/luo4105/article/details/69945086
+成功添加博客地址：/luo4105/article/details/69938780
+成功添加博客地址：/luo4105/article/details/69938780
+成功添加博客地址：/luo4105/article/details/69938342
+成功添加博客地址：/luo4105/article/details/69938342
+成功添加博客地址：/luo4105/article/details/69936937
+成功添加博客地址：/luo4105/article/details/69936937
+成功添加博客地址：/luo4105/article/details/69936268
+成功添加博客地址：/luo4105/article/details/69936268
+成功添加博客地址：/luo4105/article/details/68069426
+成功添加博客地址：/luo4105/article/details/68069426
+成功添加博客地址：/luo4105/article/details/54176346
+成功添加博客地址：/luo4105/article/details/54176346
+成功添加博客地址：/luo4105/article/details/53915233
+成功添加博客地址：/luo4105/article/details/53915233
+成功添加博客地址：/luo4105/article/details/53185494
+成功添加博客地址：/luo4105/article/details/53185494
+成功添加博客地址：/luo4105/article/details/53192653
+成功添加博客地址：/luo4105/article/details/53192653
+成功添加博客地址：/luo4105/article/details/52278975
+成功添加博客地址：/luo4105/article/details/52278975
+成功添加博客地址：/luo4105/article/details/51912114
+成功添加博客地址：/luo4105/article/details/51912114
+成功添加博客地址：/luo4105/article/details/52137333
+成功添加博客地址：/luo4105/article/details/52137333
+成功添加博客地址：/luo4105/article/details/52118260
+成功添加博客地址：/luo4105/article/details/52118260
+成功添加博客地址：/luo4105/article/details/51850376
+成功添加博客地址：/luo4105/article/details/51850376
+成功添加博客地址：/luo4105/article/details/51833999
+成功添加博客地址：/luo4105/article/details/51833999
+成功添加博客地址：/luo4105/article/details/51831209
+成功添加博客地址：/luo4105/article/details/51831209
+成功添加博客地址：/luo4105/article/details/51778698
+成功添加博客地址：/luo4105/article/details/51778698
+成功添加博客地址：/luo4105/article/details/51742654
+成功添加博客地址：/luo4105/article/details/51742654
+ip:136.167.173.197
+成功添加博客地址：/luo4105/article/details/51649361
+成功添加博客地址：/luo4105/article/details/51649361
+成功添加博客地址：/luo4105/article/details/51501328
+成功添加博客地址：/luo4105/article/details/51501328
+成功添加博客地址：/luo4105/article/details/51501245
+成功添加博客地址：/luo4105/article/details/51501245
+成功添加博客地址：/luo4105/article/details/51501170
+成功添加博客地址：/luo4105/article/details/51501170
+成功添加博客地址：/luo4105/article/details/51397825
+成功添加博客地址：/luo4105/article/details/51397825
+成功添加博客地址：/luo4105/article/details/51383416
+成功添加博客地址：/luo4105/article/details/51383416
+成功添加博客地址：/luo4105/article/details/51383333
+成功添加博客地址：/luo4105/article/details/51383333
+成功添加博客地址：/luo4105/article/details/51347338
+成功添加博客地址：/luo4105/article/details/51347338
+成功添加博客地址：/luo4105/article/details/51347188
+成功添加博客地址：/luo4105/article/details/51347188
+成功添加博客地址：/luo4105/article/details/51347050
+成功添加博客地址：/luo4105/article/details/51347050
+成功添加博客地址：/luo4105/article/details/51208219
+成功添加博客地址：/luo4105/article/details/51208219
+成功添加博客地址：/luo4105/article/details/51208197
+成功添加博客地址：/luo4105/article/details/51208197
+成功添加博客地址：/luo4105/article/details/51208115
+成功添加博客地址：/luo4105/article/details/51208115
+成功添加博客地址：/luo4105/article/details/51208014
+成功添加博客地址：/luo4105/article/details/51208014
+成功添加博客地址：/luo4105/article/details/51178741
+成功添加博客地址：/luo4105/article/details/51178741
+成功添加博客地址：/luo4105/article/details/51178708
+成功添加博客地址：/luo4105/article/details/51178708
+成功添加博客地址：/luo4105/article/details/51174257
+成功添加博客地址：/luo4105/article/details/51174257
+成功添加博客地址：/luo4105/article/details/50950145
+成功添加博客地址：/luo4105/article/details/50950145
+成功添加博客地址：/luo4105/article/details/50950113
+成功添加博客地址：/luo4105/article/details/50950113
+成功添加博客地址：/luo4105/article/details/46383343
+成功添加博客地址：/luo4105/article/details/46383343
+ip:126.132.191.119
+成功添加博客地址：/luo4105/article/details/50921258
+成功添加博客地址：/luo4105/article/details/50921258
+成功添加博客地址：/luo4105/article/details/50804148
+成功添加博客地址：/luo4105/article/details/50804148
+成功添加博客地址：/luo4105/article/details/50760607
+成功添加博客地址：/luo4105/article/details/50760607
+成功添加博客地址：/luo4105/article/details/50760583
+成功添加博客地址：/luo4105/article/details/50760583
+成功添加博客地址：/luo4105/article/details/47073601
+成功添加博客地址：/luo4105/article/details/47073601
+ip:112.162.172.127
+ip:126.171.158.183
+ip:161.124.143.198
+ip:141.101.161.135
+ip:166.135.173.197
+ip:182.126.140.149
+ip:187.194.191.130
+</system-out>
+  </testcase>
+</testsuite>
