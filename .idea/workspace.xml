@@ -2,37 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aac82000-ab57-4b75-acee-ae94c7041ac2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cc/shixicheng/AddCsdnBlogPV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cc/shixicheng/GetUsersAndAddArticle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cc/shixicheng/util/HttpUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cc/shixicheng/util/StreamUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cc/shixicheng/AddCsdnBlogPVTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cc/shixicheng/GetUsersAndAddArticleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cc/shixicheng/AddCsdnBlogPV.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cc/shixicheng/GetCSDNUsers$UserToken.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cc/shixicheng/GetCSDNUsers.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cc/shixicheng/HttpUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cc/shixicheng/StreamUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/csdn-spider-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-cc.shixicheng.AddCsdnBlogPVTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-cc.shixicheng.GetCSDNUsersTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/cc.shixicheng.AddCsdnBlogPVTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/cc.shixicheng.GetCSDNUsersTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/cc/shixicheng/AddCsdnBlogPVTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/cc/shixicheng/GetCSDNUsersTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -135,8 +105,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/cc/shixicheng/GetUsersAndAddArticleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+            <state relative-caret-position="225">
+              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -179,9 +149,11 @@
       <find>handler</find>
       <find>newProtocol</find>
       <find>conn.connect</find>
+      <find>Luo</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>xxx</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/main/java/cc/shixicheng</dir>
@@ -335,7 +307,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550021514321" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550023732437" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -514,7 +486,7 @@
       <workItem from="1548381837895" duration="4586000" />
       <workItem from="1548401611715" duration="15300000" />
       <workItem from="1548659046079" duration="17852000" />
-      <workItem from="1550019486789" duration="1018000" />
+      <workItem from="1550019486789" duration="1924000" />
     </task>
     <servers />
   </component>
@@ -551,13 +523,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40537000" />
+    <option name="totallyTimeSpent" value="41443000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2546495" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2546495" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -574,7 +545,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32961586" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32961586" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32961586" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -816,8 +787,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/cc/shixicheng/GetUsersAndAddArticleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+        <state relative-caret-position="225">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
         </state>
       </provider>
     </entry>
