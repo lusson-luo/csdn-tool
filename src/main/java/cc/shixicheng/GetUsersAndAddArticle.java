@@ -21,10 +21,12 @@ public class GetUsersAndAddArticle {
 
     public void followAndAddLike(String userNo, String password) {
         UserToken token = login(userNo, password);
-        getCSDNUsers(token.getUserName(), token.getToken());
-        Map<String, String> firstArticleIds = getFirstArticleId(users);
-        firstArticleIds.keySet().stream().forEach(userName ->
-                addLike(userName, firstArticleIds.get(userName), token.getToken()));
+        if (token!=null && token.getToken() != null) {
+            getCSDNUsers(token.getUserName(), token.getToken());
+            Map<String, String> firstArticleIds = getFirstArticleId(users);
+            firstArticleIds.keySet().stream().forEach(userName ->
+                    addLike(userName, firstArticleIds.get(userName), token.getToken(), token.userName));
+        }
     }
 
     /**
@@ -116,18 +118,18 @@ public class GetUsersAndAddArticle {
      * 点赞{"status":true,"digg":2,"bury":"0"}
      * 取消点赞{"status":true,"digg":1,"bury":"0"}
      */
-    public void addLike(String userName, String articleId, String token) {
+    public void addLike(String userName, String articleId, String token, String myUserNo) {
         String url = "https://blog.csdn.net/" + userName + "/phoenix/article/digg?ArticleId=" + articleId;
         try {
             Map<String, String> headers = new HashMap<>();
-            headers.put("cookie", "UserName=" + userName + "; " +
+            headers.put("cookie", "UserName=" + myUserNo + "; " +
                     "UserToken=" + token);
             InputStream inputStream = HttpUtil.doGet(url, headers);
             String response = StreamUtil.inputStreamToString(inputStream, "UTF-8");
             inputStream.close();
             JSONObject jsonObject = JSONObject.parseObject(response);
-            if (jsonObject.get("digg") != null && "1".equals(jsonObject.get("digg").toString())) {
-                addLike(userName, articleId, token);
+            if (jsonObject.get("digg") != null && "0".equals(jsonObject.get("digg").toString())) {
+                addLike(userName, articleId, token, myUserNo);
             }
             System.out.println("点赞成功:" +"https://blog.csdn.net/" + userName + "/article/details/" + articleId);
         } catch (IOException e) {
@@ -178,6 +180,9 @@ public class GetUsersAndAddArticle {
 
         } catch (IOException e) {
             e.printStackTrace();
+        }
+        if (userToken.getToken() != null && !userToken.getToken().equals("")) {
+            System.out.println("login success, token is " + userToken.getToken());
         }
         return userToken;
     }

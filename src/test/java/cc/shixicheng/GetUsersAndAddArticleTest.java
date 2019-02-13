@@ -12,7 +12,7 @@ public class GetUsersAndAddArticleTest {
 
     @Test
     public void followAndAddLike() {
-        getUsersAndAddArticle.followAndAddLike("xxx", "xxx");
+        getUsersAndAddArticle.followAndAddLike("xx", "xx");
     }
 
     @Test
@@ -53,8 +53,10 @@ public class GetUsersAndAddArticleTest {
 
     @Test
     public void addLike() {
-        getUsersAndAddArticle.addLike("pjw80921", "84541616", "a081dc32938a472898622673da99b0e5");
+        getUsersAndAddArticle.addLike("lmengi000", "78113257", "", "");
     }
+
+    //https://blog.csdn.net/lmengi000/article/details/78113257
 
     @Test
     public void login() {

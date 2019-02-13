@@ -36,7 +36,6 @@ public class HttpUtil {
                 (random.nextInt(100) + 100) + "." + (random.nextInt(100) + 100) + "." + (random.nextInt(100) + 100) + "." + (random.nextInt(100) + 100);
         conn.setRequestProperty("x-forwarded-for", ip);
         InputStream inputStream = conn.getInputStream();
-
         return inputStream;
     }
 
@@ -95,7 +94,6 @@ public class HttpUtil {
             Map<String, List<String>> unmodifiableResp = conn.getHeaderFields();
             Map<String, List<String>> resps = new HashMap<>();
             unmodifiableResp.keySet().stream().forEach(key -> resps.put(key, unmodifiableResp.get(key)));
-            unmodifiableResp.keySet().stream().forEach(key -> System.out.println(key + ":{" + unmodifiableResp.get(key) + "}"));
             resps.put("respBody", Arrays.asList(response));
             return resps;
         } else {
