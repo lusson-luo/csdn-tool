@@ -12,7 +12,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 import lombok.Data;
 
 /**
@@ -62,7 +61,7 @@ public class GetUsersAndAddArticle {
     }
 
     public void getCSDNUsers(String userName) {
-        if (users.size() > 30) {
+        if (users.size() > 200) {
             return;
         }
         Set<String> userList = parseFans(mePage(userName));
@@ -71,7 +70,12 @@ public class GetUsersAndAddArticle {
         ).collect(Collectors.toSet());*/
         if (userList != null && userList.size() > 0) {
             synchronized (users) {
+                users.stream().forEach(user -> {
+                    userList.contains(user);
+                    userList.remove(user);
+                });
                 users.addAll(userList);
+                System.out.println("已找到" + users.size() + "个用户");
             }
             userList.stream().forEach(user -> getCSDNUsers(user));
         }

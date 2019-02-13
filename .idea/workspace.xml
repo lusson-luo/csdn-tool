@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aac82000-ab57-4b75-acee-ae94c7041ac2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cc/shixicheng/GetUsersAndAddArticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/shixicheng/GetUsersAndAddArticle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cc/shixicheng/GetUsersAndAddArticleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cc/shixicheng/GetUsersAndAddArticleTest.java" afterDir="false" />
     </list>
@@ -29,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cc/shixicheng/GetUsersAndAddArticle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="86" column="57" selection-start-line="86" selection-start-column="57" selection-end-line="86" selection-end-column="57" />
+            <state relative-caret-position="440">
+              <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,34 +42,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cc/shixicheng/util/HttpUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cc/shixicheng/util/StreamUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/cc/shixicheng/GetUsersAndAddArticleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+            <state relative-caret-position="170">
+              <caret line="14" column="59" lean-forward="true" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
               <folding>
                 <element signature="e#330#331#0" expanded="true" />
-                <element signature="e#425#426#0" expanded="true" />
-                <element signature="e#1590#1591#0" expanded="true" />
-                <element signature="e#1668#1669#0" expanded="true" />
+                <element signature="e#423#424#0" expanded="true" />
+                <element signature="e#768#769#0" expanded="true" />
+                <element signature="e#844#845#0" expanded="true" />
+                <element signature="e#1057#1058#0" expanded="true" />
+                <element signature="e#1113#1114#0" expanded="true" />
+                <element signature="e#1565#1566#0" expanded="true" />
+                <element signature="e#1643#1644#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,8 +102,8 @@
         <option value="$PROJECT_DIR$/src/test/java/cc/shixicheng/GetCSDNUsersTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/cc/shixicheng/GetCSDNUsers.java" />
         <option value="$PROJECT_DIR$/src/main/java/cc/shixicheng/util/HttpUtil.java" />
-        <option value="$PROJECT_DIR$/src/test/java/cc/shixicheng/GetUsersAndAddArticleTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/cc/shixicheng/GetUsersAndAddArticle.java" />
+        <option value="$PROJECT_DIR$/src/test/java/cc/shixicheng/GetUsersAndAddArticleTest.java" />
       </list>
     </option>
   </component>
@@ -156,7 +143,7 @@
     <option name="jreName" value="1.8" />
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="53" />
     <option name="y" value="23" />
     <option name="width" value="1387" />
@@ -261,7 +248,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550039332513" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550047872961" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -440,17 +427,12 @@
       <workItem from="1548381837895" duration="4586000" />
       <workItem from="1548401611715" duration="15300000" />
       <workItem from="1548659046079" duration="17852000" />
-      <workItem from="1550019486789" duration="6691000" />
+      <workItem from="1550019486789" duration="7057000" />
+      <workItem from="1550040978757" duration="1736000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GetUsersAndAddArticleTest_followAndAddLike - 2019.02.13 at 11h 19m 13s.xml">
-      <configuration name="GetUsersAndAddArticleTest.followAndAddLike" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GetUsersAndAddArticleTest_followAndAddLike - 2019.02.13 at 11h 20m 47s.xml">
-      <configuration name="GetUsersAndAddArticleTest.followAndAddLike" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GetUsersAndAddArticleTest_followAndAddLike - 2019.02.13 at 11h 29m 05s.xml">
       <configuration name="GetUsersAndAddArticleTest.followAndAddLike" configurationId="JUnit" />
     </history-entry>
@@ -475,15 +457,21 @@
     <history-entry file="GetUsersAndAddArticleTest_followAndAddLike - 2019.02.13 at 14h 28m 37s.xml">
       <configuration name="GetUsersAndAddArticleTest.followAndAddLike" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GetUsersAndAddArticleTest_followAndAddLike - 2019.02.13 at 16h 27m 11s.xml">
+      <configuration name="GetUsersAndAddArticleTest.followAndAddLike" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GetUsersAndAddArticleTest_followAndAddLike - 2019.02.13 at 16h 45m 24s.xml">
+      <configuration name="GetUsersAndAddArticleTest.followAndAddLike" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46210000" />
+    <option name="totallyTimeSpent" value="48312000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="53" y="23" width="1387" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2546495" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25799257" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -492,7 +480,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5650558" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49962825" weight="0.5643045" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39900866" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -500,8 +488,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32961586" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32939634" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50037175" side_tool="true" weight="0.5643045" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32961586" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -719,6 +707,13 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/shixicheng/util/HttpUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cc/shixicheng/util/StreamUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -726,32 +721,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/shixicheng/util/HttpUtil.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/Set.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cc/shixicheng/GetUsersAndAddArticleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-          <folding>
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#1590#1591#0" expanded="true" />
-            <element signature="e#1668#1669#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="123">
+          <caret line="104" column="49" selection-start-line="104" selection-start-column="41" selection-end-line="104" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cc/shixicheng/GetUsersAndAddArticle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="86" column="57" selection-start-line="86" selection-start-column="57" selection-end-line="86" selection-end-column="57" />
+        <state relative-caret-position="440">
+          <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cc/shixicheng/GetUsersAndAddArticleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="59" lean-forward="true" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+          <folding>
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="true" />
+            <element signature="e#1113#1114#0" expanded="true" />
+            <element signature="e#1565#1566#0" expanded="true" />
+            <element signature="e#1643#1644#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -12,7 +12,7 @@ public class GetUsersAndAddArticleTest {
 
     @Test
     public void followAndAddLike() {
-        getUsersAndAddArticle.followAndAddLike("xxx", "xxx");
+        getUsersAndAddArticle.followAndAddLike("xx", "xx");
     }
 
     @Test
