@@ -12,6 +12,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 import lombok.Data;
 
 /**
@@ -19,10 +20,15 @@ import lombok.Data;
  */
 public class GetUsersAndAddArticle {
 
+    public Set<String> users = new HashSet<>();
+
     public void followAndAddLike(String userNo, String password) {
         UserToken token = login(userNo, password);
-        if (token!=null && token.getToken() != null) {
-            getCSDNUsers(token.getUserName(), token.getToken());
+        if (token != null && token.getToken() != null) {
+            getCSDNUsers(token.getUserName());
+            users.stream().forEach(user ->
+                    follow(user, token.getToken(), token.getUserName())
+            );
             Map<String, String> firstArticleIds = getFirstArticleId(users);
             firstArticleIds.keySet().stream().forEach(userName ->
                     addLike(userName, firstArticleIds.get(userName), token.getToken(), token.userName));
@@ -55,29 +61,30 @@ public class GetUsersAndAddArticle {
         return articleIdMap;
     }
 
-    public Set<String> users = new HashSet<>();
-
-    public void getCSDNUsers(String userName, String token) {
+    public void getCSDNUsers(String userName) {
         if (users.size() > 30) {
             return;
         }
-        follow(userName, token);
         Set<String> userList = parseFans(mePage(userName));
+        /*userList = userList.stream().filter(user ->
+                user.indexOf("wenxin_") == -1 && user.indexOf("qq_") == -1
+        ).collect(Collectors.toSet());*/
         if (userList != null && userList.size() > 0) {
             synchronized (users) {
                 users.addAll(userList);
             }
-            userList.stream().forEach(user -> getCSDNUsers(user, token));
+            userList.stream().forEach(user -> getCSDNUsers(user));
         }
     }
 
-    public void follow(String username, String token) {
+    public void follow(String username, String token, String myUserName) {
         String followUrl = "https://my.csdn.net/index.php/follow/do_follow";
         String params = "username=" + username;
         try {
             Map<String, String> header = new HashMap<>();
-            header.put("cookie", "UserName=" + username + "; UserToken=" + token);
+            header.put("cookie", "UserName=" + myUserName + "; UserToken=" + token);
             HttpUtil.doPostForm(followUrl, header, params);
+            System.out.println(username + "follow success");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -131,7 +138,7 @@ public class GetUsersAndAddArticle {
             if (jsonObject.get("digg") != null && "0".equals(jsonObject.get("digg").toString())) {
                 addLike(userName, articleId, token, myUserNo);
             }
-            System.out.println("点赞成功:" +"https://blog.csdn.net/" + userName + "/article/details/" + articleId);
+            System.out.println("点赞成功:" + "https://blog.csdn.net/" + userName + "/article/details/" + articleId);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -183,6 +190,8 @@ public class GetUsersAndAddArticle {
         }
         if (userToken.getToken() != null && !userToken.getToken().equals("")) {
             System.out.println("login success, token is " + userToken.getToken());
+        } else {
+            System.out.println("login failed, userNo is " + userToken.getUserName());
         }
         return userToken;
     }

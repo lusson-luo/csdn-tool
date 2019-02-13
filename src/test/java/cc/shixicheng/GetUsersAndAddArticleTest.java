@@ -12,7 +12,7 @@ public class GetUsersAndAddArticleTest {
 
     @Test
     public void followAndAddLike() {
-        getUsersAndAddArticle.followAndAddLike("xx", "xx");
+        getUsersAndAddArticle.followAndAddLike("xxx", "xxx");
     }
 
     @Test
@@ -25,7 +25,7 @@ public class GetUsersAndAddArticleTest {
 
     @Test
     public void follow() {
-        getUsersAndAddArticle.follow("high2011", "token");
+        getUsersAndAddArticle.follow("qq_35170267", "ss", "luo4105");
     }
 
     @Test
@@ -47,7 +47,7 @@ public class GetUsersAndAddArticleTest {
     @Test
     public void getCSDNUsers() {
         String username = "high2011";
-        getUsersAndAddArticle.getCSDNUsers(username, "token");
+        getUsersAndAddArticle.getCSDNUsers(username);
         getUsersAndAddArticle.users.stream().forEach(user -> System.out.println(user));
     }
 
@@ -55,8 +55,6 @@ public class GetUsersAndAddArticleTest {
     public void addLike() {
         getUsersAndAddArticle.addLike("lmengi000", "78113257", "", "");
     }
-
-    //https://blog.csdn.net/lmengi000/article/details/78113257
 
     @Test
     public void login() {

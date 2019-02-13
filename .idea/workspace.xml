@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aac82000-ab57-4b75-acee-ae94c7041ac2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cc/shixicheng/GetUsersAndAddArticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/shixicheng/GetUsersAndAddArticle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/shixicheng/util/HttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/shixicheng/util/HttpUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cc/shixicheng/GetUsersAndAddArticleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cc/shixicheng/GetUsersAndAddArticleTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,26 +29,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cc/shixicheng/GetUsersAndAddArticle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="120" column="19" lean-forward="true" selection-start-line="120" selection-start-column="19" selection-end-line="120" selection-end-column="19" />
+            <state relative-caret-position="206">
+              <caret line="86" column="57" selection-start-line="86" selection-start-column="57" selection-end-line="86" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/cc/shixicheng/GetUsersAndAddArticleTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="55" column="64" selection-start-line="55" selection-start-column="64" selection-end-line="55" selection-end-column="64" />
-              <folding>
-                <element signature="e#330#331#0" expanded="true" />
-                <element signature="e#398#399#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cc/shixicheng/util/HttpUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="96" column="59" lean-forward="true" selection-start-line="96" selection-start-column="59" selection-end-line="96" selection-end-column="59" />
+            <state relative-caret-position="169">
+              <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -70,6 +55,21 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/cc/shixicheng/GetUsersAndAddArticleTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+              <folding>
+                <element signature="e#330#331#0" expanded="true" />
+                <element signature="e#425#426#0" expanded="true" />
+                <element signature="e#1590#1591#0" expanded="true" />
+                <element signature="e#1668#1669#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,8 +115,8 @@
         <option value="$PROJECT_DIR$/src/test/java/cc/shixicheng/GetCSDNUsersTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/cc/shixicheng/GetCSDNUsers.java" />
         <option value="$PROJECT_DIR$/src/main/java/cc/shixicheng/util/HttpUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/shixicheng/GetUsersAndAddArticle.java" />
         <option value="$PROJECT_DIR$/src/test/java/cc/shixicheng/GetUsersAndAddArticleTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cc/shixicheng/GetUsersAndAddArticle.java" />
       </list>
     </option>
   </component>
@@ -261,7 +261,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550028806958" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550039332513" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -294,7 +294,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.GetUsersAndAddArticleTest.followAndAddLike">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -324,6 +324,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GetUsersAndAddArticleTest.follow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cc.shixicheng.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cc.shixicheng" />
+      <option name="MAIN_CLASS_NAME" value="cc.shixicheng.GetUsersAndAddArticleTest" />
+      <option name="METHOD_NAME" value="follow" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GetUsersAndAddArticleTest.followAndAddLike" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spider" />
       <extension name="coverage">
@@ -335,23 +352,6 @@
       <option name="PACKAGE_NAME" value="cc.shixicheng" />
       <option name="MAIN_CLASS_NAME" value="cc.shixicheng.GetUsersAndAddArticleTest" />
       <option name="METHOD_NAME" value="followAndAddLike" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GetUsersAndAddArticleTest.getCSDNUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spider" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cc.shixicheng.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cc.shixicheng" />
-      <option name="MAIN_CLASS_NAME" value="cc.shixicheng.GetUsersAndAddArticleTest" />
-      <option name="METHOD_NAME" value="getCSDNUsers" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -419,10 +419,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.GetUsersAndAddArticleTest.followAndAddLike" />
+        <item itemvalue="JUnit.GetUsersAndAddArticleTest.follow" />
+        <item itemvalue="JUnit.GetUsersAndAddArticleTest.login" />
         <item itemvalue="JUnit.GetUsersAndAddArticleTest.addLike" />
         <item itemvalue="JUnit.GetUsersAndAddArticleTest.getFirstArticleId" />
-        <item itemvalue="JUnit.GetUsersAndAddArticleTest.login" />
-        <item itemvalue="JUnit.GetUsersAndAddArticleTest.getCSDNUsers" />
       </list>
     </recent_temporary>
   </component>
@@ -440,26 +440,11 @@
       <workItem from="1548381837895" duration="4586000" />
       <workItem from="1548401611715" duration="15300000" />
       <workItem from="1548659046079" duration="17852000" />
-      <workItem from="1550019486789" duration="4968000" />
+      <workItem from="1550019486789" duration="6691000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GetCSDNUsersTest_getFirstArticleId - 2019.02.01 at 22h 19m 21s.xml">
-      <configuration name="GetCSDNUsersTest.getFirstArticleId" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GetCSDNUsersTest_followAndAddLike - 2019.02.01 at 22h 19m 42s.xml">
-      <configuration name="GetCSDNUsersTest.followAndAddLike" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GetUsersAndAddArticleTest_followAndAddLike - 2019.02.13 at 11h 17m 44s.xml">
-      <configuration name="GetUsersAndAddArticleTest.followAndAddLike" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GetUsersAndAddArticleTest_followAndAddLike - 2019.02.13 at 11h 18m 18s.xml">
-      <configuration name="GetUsersAndAddArticleTest.followAndAddLike" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GetUsersAndAddArticleTest_followAndAddLike - 2019.02.13 at 11h 18m 42s.xml">
-      <configuration name="GetUsersAndAddArticleTest.followAndAddLike" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GetUsersAndAddArticleTest_followAndAddLike - 2019.02.13 at 11h 19m 13s.xml">
       <configuration name="GetUsersAndAddArticleTest.followAndAddLike" configurationId="JUnit" />
     </history-entry>
@@ -475,9 +460,24 @@
     <history-entry file="GetUsersAndAddArticleTest_followAndAddLike - 2019.02.13 at 11h 32m 56s.xml">
       <configuration name="GetUsersAndAddArticleTest.followAndAddLike" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GetUsersAndAddArticleTest_followAndAddLike - 2019.02.13 at 14h 13m 05s.xml">
+      <configuration name="GetUsersAndAddArticleTest.followAndAddLike" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GetUsersAndAddArticleTest_followAndAddLike - 2019.02.13 at 14h 14m 01s.xml">
+      <configuration name="GetUsersAndAddArticleTest.followAndAddLike" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GetUsersAndAddArticleTest_login - 2019.02.13 at 14h 18m 32s.xml">
+      <configuration name="GetUsersAndAddArticleTest.login" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GetUsersAndAddArticleTest_follow - 2019.02.13 at 14h 27m 04s.xml">
+      <configuration name="GetUsersAndAddArticleTest.follow" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GetUsersAndAddArticleTest_followAndAddLike - 2019.02.13 at 14h 28m 37s.xml">
+      <configuration name="GetUsersAndAddArticleTest.followAndAddLike" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44487000" />
+    <option name="totallyTimeSpent" value="46210000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -728,28 +728,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cc/shixicheng/util/HttpUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="96" column="59" lean-forward="true" selection-start-line="96" selection-start-column="59" selection-end-line="96" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/shixicheng/GetUsersAndAddArticle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="120" column="19" lean-forward="true" selection-start-line="120" selection-start-column="19" selection-end-line="120" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="169">
+          <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/cc/shixicheng/GetUsersAndAddArticleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="55" column="64" selection-start-line="55" selection-start-column="64" selection-end-line="55" selection-end-column="64" />
+        <state relative-caret-position="187">
+          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
           <folding>
             <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#1590#1591#0" expanded="true" />
+            <element signature="e#1668#1669#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/shixicheng/GetUsersAndAddArticle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="86" column="57" selection-start-line="86" selection-start-column="57" selection-end-line="86" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
