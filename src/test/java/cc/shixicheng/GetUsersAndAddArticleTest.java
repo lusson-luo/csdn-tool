@@ -35,7 +35,7 @@ public class GetUsersAndAddArticleTest {
 
     @Test
     public void mePage() {
-        getUsersAndAddArticle.mePage("high2011");
+        System.out.println(getUsersAndAddArticle.mePage("high2011"));
     }
 
     @Test
@@ -61,5 +61,17 @@ public class GetUsersAndAddArticleTest {
         GetUsersAndAddArticle.UserToken userToken = getUsersAndAddArticle.login("xxx", "xxx");
         assert userToken.getToken() != null && userToken.getToken().length() > 0 && userToken.getUserName().equals(
                 "luo4105");
+    }
+
+    @Test
+    public void saveUsers() {
+        Set<GetUsersAndAddArticle.UserInfo> userInfos = new HashSet<>();
+        GetUsersAndAddArticle.UserInfo userInfo = new GetUsersAndAddArticle.UserInfo();
+        userInfo.setUserName("shixicheng");
+        userInfo.setBlogCount("120");
+        userInfo.setClickCount("23011");
+        userInfo.setCommentCount("13");
+        userInfos.add(userInfo);
+        getUsersAndAddArticle.saveUsers(userInfos);
     }
 }

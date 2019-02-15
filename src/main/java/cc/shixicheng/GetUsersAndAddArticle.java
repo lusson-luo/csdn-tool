@@ -2,16 +2,26 @@ package cc.shixicheng;
 
 import cc.shixicheng.util.HttpUtil;
 import cc.shixicheng.util.StreamUtil;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.annotation.JSONField;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 import lombok.Data;
 
 /**
@@ -20,6 +30,7 @@ import lombok.Data;
 public class GetUsersAndAddArticle {
 
     public Set<String> users = new HashSet<>();
+    public Set<UserInfo> userInfos = new HashSet<>();
 
     public void followAndAddLike(String userNo, String password) {
         UserToken token = login(userNo, password);
@@ -198,6 +209,74 @@ public class GetUsersAndAddArticle {
             System.out.println("login failed, userNo is " + userToken.getUserName());
         }
         return userToken;
+    }
+
+    public void readUsers() {
+        String filePath = "/Users/marx_luo/Documents/csdn-tool.wiki/userInfo.json";
+        File file = new File(filePath);
+        try {
+            if (file.exists()) {
+                FileInputStream inputStream = new FileInputStream(file);
+                String userInfo = StreamUtil.inputStreamToString(inputStream, "UTF-8");
+                JSONArray array = JSON.parseArray(userInfo);
+                List<UserInfo> readUsers = array.toJavaList(UserInfo.class);
+                if (readUsers != null && readUsers.size() != 0) {
+                    userInfos.addAll(readUsers);
+                    users.addAll(readUsers.stream().map(userInfo1 -> userInfo1.getUserName()).collect(Collectors.toSet()));
+                }
+
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void saveUsers(Set<UserInfo> userInfos) {
+        String userString = JSON.toJSONString(userInfos);
+        File file = new File("/Users/marx_luo/Documents/csdn-tool.wiki/userInfo.json");
+        try {
+            if(!file.exists()) {
+                file.createNewFile();
+            }
+            FileOutputStream outputStream = new FileOutputStream(file);
+            outputStream.write(userString.getBytes("UTF-8"));
+            outputStream.flush();
+            outputStream.close();
+            System.out.println("用户信息写入成功，写入地址：" + file.getPath());
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Data
+    public static class UserInfo {
+        @JSONField(name = "user_name")
+        private String userName;
+        @JSONField(name = "click_count")
+        private String clickCount;
+        @JSONField(name = "comment_count")
+        private String commentCount;
+        @JSONField(name = "blog_count")
+        private String blogCount;
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            UserInfo userInfo = (UserInfo) o;
+            return Objects.equals(userName, userInfo.userName);
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(userName);
+        }
     }
 
     @Data
