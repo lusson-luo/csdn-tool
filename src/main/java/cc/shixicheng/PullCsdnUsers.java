@@ -12,6 +12,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -35,8 +36,9 @@ public class PullCsdnUsers {
             userInfo.setUserName(DEFAULT_USER);
             userInfos.add(userInfo);
         }
-        Set<UserInfo> userInfoSet = parseUserInfo(userInfos, maxSize);
-        saveUsers(userInfoSet);
+        Set<UserInfo> parseUserInfos = parseUserInfos(userInfos, maxSize);
+        userInfos.addAll(parseUserInfos);
+        saveUsers(userInfos);
     }
 
     public Set<UserInfo> readUsersFile() {
@@ -57,13 +59,19 @@ public class PullCsdnUsers {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            System.out.println("成功读取" + userInfos.size() + "条数据");
         }
         return userInfos;
     }
 
-    public Set<UserInfo> parseUserInfo(Set<UserInfo> userInfos, int maxSize) {
+    public Set<UserInfo> parseUserInfos(Set<UserInfo> userInfos, int maxSize) {
         if (userInfos != null && userInfos.size() != 0) {
-            userInfos.stream().forEach(userInfo -> getCSDNUsers(userInfo.getUserName(), maxSize));
+            ArrayList<UserInfo> userInfoList = new ArrayList<>();
+            userInfoList.addAll(userInfos);
+            for (int i = userInfoList.size() - 1; i >= 0; i--) {
+                getCSDNUsers(userInfoList.get(i).getUserName(), maxSize);
+            }
         } else {
             System.out.println("没有用户数据提供追踪");
         }
@@ -71,14 +79,14 @@ public class PullCsdnUsers {
             Set<UserInfo> exitUser =
                     userInfos.stream().filter(userInfo -> userInfo.getUserName().equals(userName)).collect(Collectors.toSet());
             if (exitUser == null || exitUser.size() == 0) {
-                return parseUserInfo(userName);
+                return parseUserInfos(userName);
             }
             return null;
-        }).filter(userInfo -> userInfo!=null).collect(Collectors.toSet());
+        }).filter(userInfo -> userInfo != null).collect(Collectors.toSet());
         return parseUsers.stream().filter(parseUser -> parseUser != null).collect(Collectors.toSet());
     }
 
-    public UserInfo parseUserInfo(String userName) {
+    public UserInfo parseUserInfos(String userName) {
         String mePage = mePage(userName);
         if (mePage == null || mePage.length() == 0) {
             return null;
@@ -98,7 +106,7 @@ public class PullCsdnUsers {
             userInfo.setPageView(matcher.group(1));
             userInfo.setBlogCount(matcher.group(2));
             userInfo.setCommentCount(matcher.group(3));
-            System.out.println(userName + "成功获得用户信息");
+            System.out.println("成功获得用户" + userName + "信息");
             return userInfo;
         }
         return null;
@@ -106,19 +114,16 @@ public class PullCsdnUsers {
 
 
     public void getCSDNUsers(String userName, int maxSize) {
-        if (users.size() > maxSize) { //
+        if (users.size() > maxSize) {
             return;
         }
         String mePage = mePage(userName);
         Set<String> userList = parseFans(mePage);
         if (userList != null && userList.size() > 0) {
             synchronized (users) {
-                users.stream().forEach(user -> {
-                    userList.contains(user);
-                    userList.remove(user);
-                });
+                userList = userList.stream().filter(user -> !users.contains(user)).collect(Collectors.toSet());
                 users.addAll(userList);
-                System.out.println("已找到" + users.size() + "个用户");
+                System.out.println("访问" + userName + "主页，已找到" + users.size() + "个用户");
             }
             userList.stream().forEach(user -> getCSDNUsers(user, maxSize));
         }
@@ -128,8 +133,6 @@ public class PullCsdnUsers {
         String follerUrl = "https://me.csdn.net/" + username;
         try {
             Map<String, String> headers = new HashMap<>();
-            headers.put("cook", "UserName=luo4105; UserInfo=de5e709f7cd84e2d87648d45e6288db0; " +
-                    "UserToken=de5e709f7cd84e2d87648d45e6288db0;");
             InputStream inputStream = HttpUtil.doGet(follerUrl, headers);
             String response = StreamUtil.inputStreamToString(inputStream, "UTF-8");
             return response;
@@ -157,14 +160,14 @@ public class PullCsdnUsers {
         String userString = JSON.toJSONString(userInfos);
         File file = new File("/Users/marx_luo/Documents/csdn-tool.wiki/userInfo.json");
         try {
-            if(!file.exists()) {
+            if (!file.exists()) {
                 file.createNewFile();
             }
             FileOutputStream outputStream = new FileOutputStream(file);
             outputStream.write(userString.getBytes("UTF-8"));
             outputStream.flush();
             outputStream.close();
-            System.out.println("用户信息写入成功，写入地址：" + file.getPath());
+            System.out.println("成功写入" + userInfos.size() + "用户信息，写入地址：" + file.getPath());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (UnsupportedEncodingException e) {

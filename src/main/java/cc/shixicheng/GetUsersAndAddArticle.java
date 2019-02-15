@@ -109,8 +109,6 @@ public class GetUsersAndAddArticle {
         String follerUrl = "https://me.csdn.net/" + username;
         try {
             Map<String, String> headers = new HashMap<>();
-            headers.put("cook", "UserName=luo4105; UserInfo=de5e709f7cd84e2d87648d45e6288db0; " +
-                    "UserToken=de5e709f7cd84e2d87648d45e6288db0;");
             InputStream inputStream = HttpUtil.doGet(follerUrl, headers);
             String response = StreamUtil.inputStreamToString(inputStream, "UTF-8");
             return response;
@@ -211,27 +209,6 @@ public class GetUsersAndAddArticle {
         return userToken;
     }
 
-    public void readUsers() {
-        String filePath = "/Users/marx_luo/Documents/csdn-tool.wiki/userInfo.json";
-        File file = new File(filePath);
-        try {
-            if (file.exists()) {
-                FileInputStream inputStream = new FileInputStream(file);
-                String userInfo = StreamUtil.inputStreamToString(inputStream, "UTF-8");
-                JSONArray array = JSON.parseArray(userInfo);
-                List<UserInfo> readUsers = array.toJavaList(UserInfo.class);
-                if (readUsers != null && readUsers.size() != 0) {
-                    userInfos.addAll(readUsers);
-                    users.addAll(readUsers.stream().map(userInfo1 -> userInfo1.getUserName()).collect(Collectors.toSet()));
-                }
-
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
     public void saveUsers(Set<UserInfo> userInfos) {
         String userString = JSON.toJSONString(userInfos);
