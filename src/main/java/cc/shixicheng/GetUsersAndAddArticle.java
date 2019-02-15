@@ -30,7 +30,6 @@ import lombok.Data;
 public class GetUsersAndAddArticle {
 
     public Set<String> users = new HashSet<>();
-    public Set<UserInfo> userInfos = new HashSet<>();
 
     public void followAndAddLike(String userNo, String password) {
         UserToken token = login(userNo, password);
@@ -209,27 +208,6 @@ public class GetUsersAndAddArticle {
         return userToken;
     }
 
-
-    public void saveUsers(Set<UserInfo> userInfos) {
-        String userString = JSON.toJSONString(userInfos);
-        File file = new File("/Users/marx_luo/Documents/csdn-tool.wiki/userInfo.json");
-        try {
-            if(!file.exists()) {
-                file.createNewFile();
-            }
-            FileOutputStream outputStream = new FileOutputStream(file);
-            outputStream.write(userString.getBytes("UTF-8"));
-            outputStream.flush();
-            outputStream.close();
-            System.out.println("用户信息写入成功，写入地址：" + file.getPath());
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
     @Data
     public static class UserInfo {

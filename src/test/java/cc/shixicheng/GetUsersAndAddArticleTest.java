@@ -63,15 +63,5 @@ public class GetUsersAndAddArticleTest {
                 "luo4105");
     }
 
-    @Test
-    public void saveUsers() {
-        Set<GetUsersAndAddArticle.UserInfo> userInfos = new HashSet<>();
-        GetUsersAndAddArticle.UserInfo userInfo = new GetUsersAndAddArticle.UserInfo();
-        userInfo.setUserName("shixicheng");
-        userInfo.setBlogCount("120");
-        userInfo.setClickCount("23011");
-        userInfo.setCommentCount("13");
-        userInfos.add(userInfo);
-        getUsersAndAddArticle.saveUsers(userInfos);
-    }
+
 }

@@ -103,9 +103,12 @@ public class PullCsdnUsers {
         if (matcher.find()) {
             UserInfo userInfo = new UserInfo();
             userInfo.setUserName(userName);
-            userInfo.setPageView(matcher.group(1));
-            userInfo.setBlogCount(matcher.group(2));
-            userInfo.setCommentCount(matcher.group(3));
+            userInfo.setPageView(matcher.group(1) == null || matcher.group(1).length() == 0 ? 0 :
+                    Integer.valueOf(matcher.group(1)));
+            userInfo.setBlogCount(matcher.group(2) == null || matcher.group(2).length() == 0 ? 0 :
+                    Integer.valueOf(matcher.group(2)));
+            userInfo.setCommentCount(matcher.group(3) == null || matcher.group(3).length() == 0 ? 0 :
+                    Integer.valueOf(matcher.group(3)));
             System.out.println("成功获得用户" + userName + "信息");
             return userInfo;
         }
@@ -182,11 +185,11 @@ public class PullCsdnUsers {
         @JSONField(name = "user_name")
         private String userName;
         @JSONField(name = "page_view")
-        private String pageView;
+        private Integer pageView;
         @JSONField(name = "comment_count")
-        private String commentCount;
+        private Integer commentCount;
         @JSONField(name = "blog_count")
-        private String blogCount;
+        private Integer blogCount;
 
         @Override
         public boolean equals(Object o) {
